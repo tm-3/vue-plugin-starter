@@ -5,16 +5,35 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit"
+    "test:unit": "vue-cli-service test:unit",
+    "postinstall": "npx npm-install-peers"
   },
-  "dependencies": {
+  "files": [
+    "dist/*",
+    "types/*"
+  ],
+  "dependencies": {},
+  "peerDependencies": {
     "core-js": "^2.6.5",
     "vue": "^2.6.6",
     "vue-class-component": "^6.0.0",
     "vue-property-decorator": "^8.0.0"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^5.0.6",
+    "@storybook/addon-centered": "^5.0.6",
+    "@storybook/addon-knobs": "^5.0.6",
+    "@storybook/addon-links": "^5.0.6",
+    "@storybook/addon-viewport": "^5.0.6",
+    "@storybook/vue": "^5.0.6",
     "@types/jest": "^23.1.4",
+    "@types/node": "^11.13.0",
+    "@types/storybook__addon-actions": "^3.4.2",
+    "@types/storybook__addon-centered": "^3.3.2",
+    "@types/storybook__addon-knobs": "^4.0.5",
+    "@types/storybook__addon-links": "^3.3.4",
+    "@types/storybook__addon-viewport": "^4.1.0",
+    "@types/storybook__vue": "^5.0.1",
     "@vue/cli-plugin-babel": "^3.5.0",
     "@vue/cli-plugin-typescript": "^3.5.0",
     "@vue/cli-plugin-unit-jest": "^3.5.0",
