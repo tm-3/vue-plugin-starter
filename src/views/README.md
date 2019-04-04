@@ -1,0 +1,1 @@
+I typically like to put an entire view that a user sees into a separate folder. While it's still a Vue component, I tend to think of these as the components you would use for your destination routes.

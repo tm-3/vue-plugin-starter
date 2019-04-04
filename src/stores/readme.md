@@ -1,0 +1,1 @@
+Use your state manager of choice here. I prefer using Vue 2.6's Vue.observable() function. This choice is highly dependent on what you are building. A Vuex module can easily be added in here as well and dynamically loaded with the plugin.
