@@ -1,21 +1,31 @@
-import Vue from 'vue/types/vue';
-import { PluginFunction } from 'vue';
-// import './lib';
+import Vue, { PluginFunction } from 'vue';
 
-declare const PluginName: PluginName;
-export default PluginName;
-export interface PluginName {
-  // install: PluginFunction<PluginOptions>;
+declare const VuePluginTemplate: VuePluginTemplate;
+export default VuePluginTemplate;
+
+export interface VuePluginTemplate {
+  install: PluginFunction<PluginOptions>;
 }
 
-declare module 'somemodule' {
-  const install: PluginFunction<{}>;
-}
-
-export interface PluginOptions {}
-
+//Vue Global Properties
 declare module 'vue/types/vue' {
   interface Vue {
-    $myProperty: string;
+    $someGlobal: string;
+    $someMethod: () => void;
   }
+}
+
+//Component Options
+declare module 'vue/types/options' {
+  interface ComponentOptions<V extends Vue> {
+    myOption?: string;
+  }
+}
+
+//Rename this to your plugin name
+
+export interface PluginOptions {
+  // If true, all components in this plugin will be registered globally.
+  registerComponentsGlobally: boolean;
+  registerViewComponentsGlobally: boolean;
 }

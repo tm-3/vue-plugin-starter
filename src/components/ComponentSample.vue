@@ -11,7 +11,7 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 export default class ComponentSample extends Vue {
   @Prop() someProp: string = '';
   sampleMethod() {
-
+    
     this.$someGlobal = '';
   }
 }
