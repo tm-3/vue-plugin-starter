@@ -26,5 +26,5 @@
     "tests/**/*.tsx",
     "types/*.*"
   ],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "src/**/*.stories.ts"]
 }

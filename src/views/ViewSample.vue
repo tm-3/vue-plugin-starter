@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>I am a View</h1>
-    <sample-component>I am a component nested in a view</sample-component>
+    <component-sample>I am a component nested in a view</component-sample>
   </div>
 </template>
 <script lang="ts">
@@ -10,7 +10,7 @@ import ComponentSample from '../components/ComponentSample.vue';
 
 @Component({
   components: {
-    'sample-component': ComponentSample,
+    'component-sample': ComponentSample,
   },
 })
 export default class ViewSample extends Vue {}

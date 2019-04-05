@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Sample Component</h1>
+    <h1>Component Sample</h1>
     <slot></slot>
   </div>
 </template>

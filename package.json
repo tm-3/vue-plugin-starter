@@ -3,14 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "types": "types/index.d.ts",
-  "main": "dist/vue-plugin-template.esm.js",
-  "module": "dist/vue-plugin-template.umd.js",
-  "unpkg": "dist/vue-plugin-template.min.js",
+  "main": "dist/vue-plugin-starter.esm.js",
+  "module": "dist/vue-plugin-starter.umd.js",
+  "unpkg": "dist/vue-plugin-starter.min.js",
   "scripts": {
-    "dist": "vue-cli-service build --target lib --name vue-plugin-template ./src/index.ts",
+    "dist:modern": "vue-cli-service build --modern --name vue-plugin-starter ./src/index.ts",
+    "dist": "vue-cli-service build --target lib --name vue-plugin-starter ./src/index.ts",
+    "serve": "vue-cli-service serve",
     "test:unit": "vue-cli-service test:unit",
-    "sb": "start-storybook -p 6006 -c ./config/storybook --ci",
-    "postinstall": "rimraf ./node_module/@types/react"
+    "sb": "start-storybook -p 6006 -c ./config/storybook --ci"
   },
   "files": [
     "dist/*",

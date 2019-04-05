@@ -1,5 +1,11 @@
 import Vue, { PluginFunction } from 'vue';
 
+export interface PluginOptions {
+  // If true, all components in this plugin will be registered globally.
+  registerComponentsGlobally: boolean;
+  registerViewComponentsGlobally: boolean;
+}
+
 declare const VuePluginTemplate: VuePluginTemplate;
 export default VuePluginTemplate;
 
@@ -23,9 +29,3 @@ declare module 'vue/types/options' {
 }
 
 //Rename this to your plugin name
-
-export interface PluginOptions {
-  // If true, all components in this plugin will be registered globally.
-  registerComponentsGlobally: boolean;
-  registerViewComponentsGlobally: boolean;
-}
