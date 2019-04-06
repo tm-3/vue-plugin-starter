@@ -1,0 +1,23 @@
+{
+  "presets": [
+    // [
+    //   "@babel/preset-env",
+    //   {
+    //     "useBuiltIns": "entry"
+    //   }
+    // ],
+    "@vue/babel-preset-jsx",
+    "@vue/app",
+    "@babel/preset-typescript"
+  ]
+}
+// {
+//   "presets": [
+//     [
+//       "@babel/preset-env",
+//       {
+//         "useBuiltIns": "entry"
+//       }
+//     ]
+//   ]
+// }

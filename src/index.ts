@@ -1,5 +1,5 @@
 import { PluginObject, VueConstructor, VNode } from 'vue';
-import { PluginOptions } from '../types/index';
+import { PluginOptions } from 'types';
 import { DirectiveBinding } from 'vue/types/options';
 import './components';
 

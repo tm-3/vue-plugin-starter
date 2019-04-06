@@ -5,10 +5,10 @@ import App from './App.vue';
 import Plugin from './index';
 
 // debugger;
-// Vue.use(Plugin, {
-//   registerComponentsGlobally: true,
-//   registerViewComponentsGlobally: true,
-// });
+Vue.use(Plugin, {
+  registerComponentsGlobally: true,
+  registerViewComponentsGlobally: true,
+});
 
 Vue.config.productionTip = false;
 
