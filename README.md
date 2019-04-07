@@ -19,7 +19,7 @@ Storybook is included in order to develop components. Sample stories and a basic
 
 ## Rollup
 
-Rollup doesn't work too well in this case.
+Rollup is used to bundle the plugin into a simple ES6 module. No transformations were applied. This should be handled in your main Vue application.
 
 ## Project setup
 

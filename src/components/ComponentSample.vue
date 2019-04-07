@@ -9,9 +9,8 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
 export default class ComponentSample extends Vue {
-  @Prop() someProp: string = '';
+  @Prop() someProp!: string;
   sampleMethod() {
-    
     this.$someGlobal = '';
   }
 }

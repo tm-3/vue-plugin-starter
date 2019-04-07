@@ -1,18 +1,18 @@
 import { PluginObject, VueConstructor, VNode } from 'vue';
 import { PluginOptions } from 'types';
 import { DirectiveBinding } from 'vue/types/options';
-import './components';
+import { registerComponents, registerViews } from './components.global';
 
 const PluginName: PluginObject<PluginOptions> = {
   install(Vue: VueConstructor, options?: PluginOptions) {
     if (options) {
       // handle plugin options here
       if (options.registerComponentsGlobally) {
-        require('./components/components.global');
+        registerComponents();
       }
 
       if (options.registerViewComponentsGlobally) {
-        require('./views/views.global');
+        registerViews();
       }
     }
 

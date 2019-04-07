@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>hi</h1>
+    <view-component></view-component>
     <view-sample></view-sample>
   </div>
 </template>

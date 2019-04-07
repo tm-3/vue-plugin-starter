@@ -1,4 +1,5 @@
 import Vue, { PluginFunction } from 'vue';
+import { ComponentSample } from 'src/components';
 
 declare const VuePluginTemplate: VuePluginTemplate;
 export default VuePluginTemplate;
@@ -29,3 +30,5 @@ export interface PluginOptions {
   registerComponentsGlobally: boolean;
   registerViewComponentsGlobally: boolean;
 }
+
+export { ComponentSample };
